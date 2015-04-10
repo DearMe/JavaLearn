@@ -23,5 +23,4 @@ public class FillingLists {
 		Collections.fill(list, new StringAddress("World!"));
 		System.out.println(list);
 	}
-
 }
