@@ -8,5 +8,4 @@ public class TestMain {
 		System.out.println("Say hello at home");
 		System.out.println("Say hello in office");
 	}
-
 }
