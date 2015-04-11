@@ -15,7 +15,7 @@ class A{
 		this.a = a;
 	}
 	public boolean equals(Object o){
-		return ((A)o).getA() == this.a ? true : false;
+		return (o instanceof A) && ((A)o).getA() == this.a ? true : false;
 	}
 }
 public class TestMain {
@@ -26,10 +26,8 @@ public class TestMain {
 		List<Integer> integers = new ArrayList<Integer>();
 		List<A> as = new ArrayList<A>();
 		A a1 = new A(1);
-		A a2 = new A(1);
+		A a2 = new A(2);
 		as.add(a1);
-		as.add(a2);
-		System.out.println(as.indexOf(a2));
-		System.out.println(as.indexOf(a1));
+		System.out.println(as.contains(a1));
 	}
 }
