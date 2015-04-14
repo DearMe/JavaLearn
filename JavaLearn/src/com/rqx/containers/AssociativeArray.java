@@ -1,5 +1,8 @@
 package com.rqx.containers;
 
+import java.util.HashMap;
+import java.util.TreeMap;
+
 public class AssociativeArray<K, V> {
 	
 	private Object[][] pairs;
@@ -35,7 +38,7 @@ public class AssociativeArray<K, V> {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		AssociativeArray<String, String> map = new AssociativeArray<String, String>(6);
+		TreeMap<String, String> map = new TreeMap<String, String>();
 		map.put("sky", "blue");
 		map.put("grass", "green");
 		map.put("ocean", "dancing");
