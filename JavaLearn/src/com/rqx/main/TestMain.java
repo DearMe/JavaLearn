@@ -1,5 +1,8 @@
 package com.rqx.main;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,14 +23,19 @@ class A{
 }
 public class TestMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
-		List<String> strings = new ArrayList<String>();
-		List<Integer> integers = new ArrayList<Integer>();
-		List<A> as = new ArrayList<A>();
-		A a1 = new A(1);
-		A a2 = new A(2);
-		as.add(a1);
-		System.out.println(as.contains(a1));
+		FileWriter fw = new FileWriter("demo.txt");
+		
+		fw.write("abcde");
+		fw.write("kkk");
+		fw.close();
+		
+		FileReader fr = new FileReader("demo.txt");
+		int ch = 0;
+		while((ch = fr.read()) != -1){
+			System.out.println((char)ch);
+		}
+		fr.close();
 	}
 }
