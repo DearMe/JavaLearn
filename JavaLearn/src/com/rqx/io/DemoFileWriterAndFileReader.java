@@ -9,8 +9,8 @@ public class DemoFileWriterAndFileReader {
 
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
-//1. ½«ÎÄ±¾Êı¾İ´æ´¢µ½Ò»¸öÎÄ¼şÖĞ
-		//½ÏÎªÍêÕûµÄÒì³£´¦Àí·½Ê½£¬ÒÔºó¼ò»¯ÒÔ±ãÕ¹Ê¾
+//1. å°†æ–‡æœ¬æ•°æ®å­˜å‚¨åˆ°ä¸€ä¸ªæ–‡ä»¶ä¸­
+		//è¾ƒä¸ºå®Œæ•´çš„å¼‚å¸¸å¤„ç†æ–¹å¼ï¼Œä»¥åç®€åŒ–ä»¥ä¾¿å±•ç¤º
 		FileWriter fw = null;
 		try {
 			fw = new FileWriter("demo.txt");
@@ -32,8 +32,8 @@ public class DemoFileWriterAndFileReader {
 		}
 		
 		
-//2. ¶ÁÈ¡Ò»¸öÒÑÓĞµÄÎÄ±¾ÎÄ¼ş£¬½«ÎÄ±¾Êı¾İ´òÓ¡³öÀ´
-		//Ò»´Î¶ÁÒ»¸ö×Ö·û¾Í´òÓ¡³öÀ´£¬Ğ§ÂÊ²»¸ß
+//2. è¯»å–ä¸€ä¸ªå·²æœ‰çš„æ–‡æœ¬æ–‡ä»¶ï¼Œå°†æ–‡æœ¬æ•°æ®æ‰“å°å‡ºæ¥
+		//ä¸€æ¬¡è¯»ä¸€ä¸ªå­—ç¬¦å°±æ‰“å°å‡ºæ¥ï¼Œæ•ˆç‡ä¸é«˜
 		FileReader fr = null;
 		int ch = 0;
 		try {
@@ -58,7 +58,7 @@ public class DemoFileWriterAndFileReader {
 	
 		
 		
-//3. ¶ÁÒ»¸ö×Ö·û¾Í´æÈë×Ö·ûÊı×éÀï£¬¶ÁÍê1KBÔÙ´òÓ¡
+//3. è¯»ä¸€ä¸ªå­—ç¬¦å°±å­˜å…¥å­—ç¬¦æ•°ç»„é‡Œï¼Œè¯»å®Œ1KBå†æ‰“å°
 		fr = null;
 	}
 
